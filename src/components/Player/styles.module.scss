@@ -118,12 +118,12 @@
       filter: brightness(0.7);
     }
 
-    &:isActive {
+    &.isActive {
         // to change color of svg
         filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
     }
     
-    &:isActive:hover {
+    &.isActive:hover {
         filter: brigthness(0.6) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
     }
 
