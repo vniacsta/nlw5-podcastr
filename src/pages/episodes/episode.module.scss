@@ -27,6 +27,13 @@
                 transform: translate(-50%, -50%);
             }
 
+            &:last-child {
+                right: 0;
+                top: 50%;
+                background: var(--green-500);
+                transform: translate(50%, -50%);
+            }
+
             &:hover {
                 filter: brightness(0.9);
             }

@@ -13,7 +13,7 @@ type Episode = {
     thumbnail: string;
     members: string;
     publishedAt: string;
-    duration: string;
+    duration: number;
     durationAsString: string;
     description: string;
     url: string;
@@ -62,6 +62,8 @@ export default function Episode({ episode }: EpisodeProps) {
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
         paths: [],
+        // incremental static regeneration
+        // only opens the next page when everything is loaded
         fallback: 'blocking',
     };
 };
